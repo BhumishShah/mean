@@ -12,7 +12,7 @@ pipeline {
           stage ('apache Server stop') {
                         steps{
                               echo 'stopping the apache service'
-                              sh 'sh service apache2 stop'
+                              sh 'service apache2 stop'
                               }
                                  
                                                          } 
