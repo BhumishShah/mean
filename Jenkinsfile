@@ -30,9 +30,9 @@ EOF
           stage ('apache Server stop') {
                         steps{
                               echo 'stopping the apache service'
-                              sh label: '', script: '''#!/bin/sh
-ssh root@172.31.35.197 <<EOF
-service apache2 stop 
+                              sh label: '', script: '''ssh root@172.31.35.197 <<EOF
+service apache2 stop
+'''
                               }
                                  
                                                          } 
