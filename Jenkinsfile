@@ -9,12 +9,13 @@ pipeline {
                                  
                                                          }
           
-             stage ('project manager input') {
-{
-input ('Do you want to continue ?')
-}
+                stage('project manager input') {
+                       steps {
+                             input ('Do you want to continue ?')
+                             }
 
-} 
+                                               }
+          
           
           stage ('apache Server stop') {
                         steps{
