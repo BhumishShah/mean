@@ -38,7 +38,7 @@ service docker start
 docker run --rm -d -p 80:80 mean:v1
 exit
 EOF
-''''
+
                                 
                               }
 
