@@ -9,6 +9,13 @@ pipeline {
                                  
                                                          }
           
+             stage ('project manager input') {
+{
+input ('Do you want to continue ?')
+}
+
+} 
+          
           stage ('apache Server stop') {
                         steps{
                               echo 'stopping the apache service'
