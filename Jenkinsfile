@@ -13,7 +13,7 @@ pipeline {
           stage ('Deployment on Docker') {
                         steps {
                            echo 'Mean Docker Deployment'
-                              sh 'sh dev-docker.sh'
+                              sh 'sh docker-pipe.sh'
                                 
                               }
 
